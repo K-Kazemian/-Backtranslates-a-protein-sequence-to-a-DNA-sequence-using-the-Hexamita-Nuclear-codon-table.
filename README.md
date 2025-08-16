@@ -1,0 +1,1 @@
+# -Backtranslates-a-protein-sequence-to-a-DNA-sequence-using-the-Hexamita-Nuclear-codon-table.
