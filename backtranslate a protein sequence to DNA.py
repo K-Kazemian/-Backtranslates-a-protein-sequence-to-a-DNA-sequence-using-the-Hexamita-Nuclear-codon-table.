@@ -39,13 +39,10 @@ def backtranslate_protein(protein_sequence):
     """
     codon_table = get_hexamita_codon_table()
     
-    # Get a list of codon lists for each amino acid in the sequence
     codon_lists = [codon_table[aa.upper()] for aa in protein_sequence]
     
-    # Use itertools.product to get all combinations of codons
     all_dna_combinations = list(itertools.product(*codon_lists))
     
-    # Join the codons to form complete DNA sequences
     dna_sequences = [''.join(seq) for seq in all_dna_combinations]
     
     return dna_sequences
@@ -73,3 +70,4 @@ def analyze_codon_usage(protein_sequence):
 
 
     print(seq)
+
